@@ -103,15 +103,15 @@
           - Screenshot #2 Roles Table
         - Screenshot #3 ![image](https://user-images.githubusercontent.com/90267388/141667546-d9a796cf-b02a-4f94-9e70-beac7905592d.png)
           - Screenshot #3 Include a function to check if a user has a specific role
-  - [ ] (11/2021) Site should have basic styles/theme applied; everything should be styled
+  - [X] (11/2021) Site should have basic styles/theme applied; everything should be styled
     -  List of Evidence of Feature Completion
-      - Status: Pending (Completed, Partially working, Incomplete, Pending)
+      - Status: Completed
       - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
       - Pull Requests
-        - PR link #1 (repeat as necessary)
+        - PR link #1 https://github.com/hk453/IT202-007/pull/27
       - Screenshots
-        - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-          - Screenshot #1 description explaining what you're trying to show
+        - Screenshot #1 ![image](https://user-images.githubusercontent.com/90267388/141668943-28d04004-1315-47d4-9ec0-a722270375fc.png)
+          - Screenshot #1 Basic styles/theme applied
   - [ ] (mm/dd/yyyy of completion) Any output messages/errors should be “user friendly”
     -  List of Evidence of Feature Completion
       - Status: Pending (Completed, Partially working, Incomplete, Pending)
