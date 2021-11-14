@@ -1,3 +1,16 @@
+.alert-success {
+    background-color: darkgreen;
+}
+
+.alert-warning {
+    background-color: khaki;
+}
+
+.alert-danger {
+    background-color: tomato;
+}
+
 .alert-info {
     background-color: teal;
 }
+
