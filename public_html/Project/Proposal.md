@@ -24,6 +24,7 @@
 --> 
 ### Proposal Checklist and Evidence
 
+
 - Milestone 1
   - [X] (11/2021) User will be able to register a new account
     -  List of Evidence of Feature Completion
