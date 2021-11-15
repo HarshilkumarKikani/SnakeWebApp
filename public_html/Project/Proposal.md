@@ -29,6 +29,7 @@
     -  List of Evidence of Feature Completion
       - Status: Completed
       - Direct Link: https://hk453-prod.herokuapp.com/Project/register.php 
+      - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
       - Pull Requests
         - PR Link #1 https://github.com/hk453/IT202-007/pull/31
       - Screenshots
@@ -96,7 +97,7 @@
   - [X] (11/2021) Basic Roles implemented
     -  List of Evidence of Feature Completion
       - Status: Completed
-      - Direct Link: 
+      - Direct Link: https://hk453-prod.herokuapp.com/Project/login.php 
       - Pull Requests
         - PR link #1 https://github.com/hk453/IT202-007/pull/28
       - Screenshots
