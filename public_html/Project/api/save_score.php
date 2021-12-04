@@ -103,8 +103,6 @@ if (isset($data["score"]) && isset($data["data"]) && isset($data["nonce"])) {
             if (se($_SESSION, "gen_points", false, false)) {
                 $p = ceil($score / 100);
                 unset($_SESSION["gen_points"]); //remove flag
-                change_bills($p, "win", -1, get_user_account_id(), "You won $p bills with a score of $score (" . $mod . "x multiplier)!");
-                flash("You won $p bills!");
                 $response["message"] = "You won $p bills!";
             } else {
                 $response["message"] = "Score Saved!";
