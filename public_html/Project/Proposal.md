@@ -1,11 +1,11 @@
 # Project: 
 
-# Project Name: (Which Project)
-## Project Summary: (Copy from proposal)
-## Github Link: (Prod Branch of Project Folder)
-## Project Board Link: 
-## Website Link: (Heroku Prod of Project folder)
-## Your Name:
+# Project Name: Simple Arcade
+## Project Summary: This project will create a simple Arcade with scoreboards and competitions based on the implemented game. 
+## Github Link: https://github.com/hk453/IT202-007/tree/prod/public_html/Project
+## Project Board Link: https://github.com/hk453/IT202-007/projects/1
+## Website Link: https://hk453-prod.herokuapp.com/Project/login.php
+## Your Name: Harshilkumar Kikani
 
 <!--
 ### Line item / Feature template (use this for each bullet point)
