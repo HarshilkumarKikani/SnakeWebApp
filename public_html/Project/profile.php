@@ -4,8 +4,6 @@ is_logged_in(true);
 ?>
 <?php
 
-
-
 if (isset($_POST["save"])) {
     $email = se($_POST, "email", null, false);
     $username = se($_POST, "username", null, false);
@@ -136,6 +134,33 @@ $user_id = get_user_id();
     </form>
 </div>
 
+?>
+<form method="POST" onsubmit="return validate(this);">
+    <div class="mb-3">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" value="<?php se($email); ?>" />
+    </div>
+    <div class="mb-3">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" value="<?php se($username); ?>" />
+    </div>
+    <!-- DO NOT PRELOAD PASSWORD -->
+    <div>Password Reset</div>
+    <div class="mb-3">
+        <label for="cp">Current Password</label>
+        <input type="password" name="currentPassword" id="cp" />
+    </div>
+    <div class="mb-3">
+        <label for="np">New Password</label>
+        <input type="password" name="newPassword" id="np" />
+    </div>
+    <div class="mb-3">
+        <label for="conp">Confirm Password</label>
+        <input type="password" name="confirmPassword" id="conp" />
+    </div>
+    <input type="submit" value="Update Profile" name="save" />
+</form>
+
 <script>
     function validate(form) {
         let pw = form.newPassword.value;
@@ -167,5 +192,11 @@ $user_id = get_user_id();
 </script>
 <?php
 require_once(__DIR__ . "/../../partials/flash.php");
+
 ?>
 
+
+
+?>
+
+?>

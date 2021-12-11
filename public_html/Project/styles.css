@@ -8,6 +8,16 @@
 
 .alert-danger {
     background-color: red;
+
+    background-color: darkgreen;
+}
+
+.alert-warning {
+    background-color: khaki;
+}
+
+.alert-danger {
+    background-color: tomato;
 }
 
 .alert-info {
@@ -21,3 +31,15 @@ body{
     color: white;
 
 }
+nav li{display: inline; background-color: darksalmon;}
+nav li a{color: black}
+input{border-radius: 20;}
+body{
+    background-color: cornflowerblue;
+    color: rgb(153, 0, 153);
+
+}
+
+
+
+
