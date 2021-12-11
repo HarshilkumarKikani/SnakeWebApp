@@ -43,6 +43,9 @@ try {
     flash(var_export($e->errorInfo, true), "danger");
 }
 
+//this version is for M1Roles
+
+
 ?>
 <h1>List Roles</h1>
 <form method="POST">
@@ -87,4 +90,6 @@ try {
 <?php
 //note we need to go up 1 more directory
 require_once(__DIR__ . "/../../../partials/flash.php");
+?>
+=======
 ?>
