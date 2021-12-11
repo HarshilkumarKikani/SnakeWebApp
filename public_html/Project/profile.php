@@ -3,6 +3,7 @@ require_once(__DIR__ . "/../../partials/nav.php");
 is_logged_in(true);
 ?>
 <?php
+
 if (isset($_POST["save"])) {
     $email = se($_POST, "email", null, false);
     $username = se($_POST, "username", null, false);
@@ -84,6 +85,55 @@ if (isset($_POST["save"])) {
 <?php
 $email = get_user_email();
 $username = get_username();
+$user_id = get_user_id();
+?>
+<div class="container-fluid">
+    <h1>Profile</h1>
+    <div>
+        <?php $scores = get_latest_scores($user_id); ?>
+        <h3>Score History</h3>
+        <table class="table text-light">
+            <thead>
+                <th>Score</th>
+                <th>Time</th>
+            </thead>
+            <tbody>
+                <?php foreach ($scores as $score) : ?>
+                    <tr>
+                        <td><?php se($score, "score", 0); ?></td>
+                        <td><?php se($score, "modified", "-"); ?></td>
+                    </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+    </div>
+    <form method="POST" onsubmit="return validate(this);">
+        <div class="mb-3">
+            <label class="form-label" for="email">Email</label>
+            <input class="form-control" type="email" name="email" id="email" value="<?php se($email); ?>" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="username">Username</label>
+            <input class="form-control" type="text" name="username" id="username" value="<?php se($username); ?>" />
+        </div>
+        <!-- DO NOT PRELOAD PASSWORD -->
+        <div class="mb-3">Password Reset</div>
+        <div class="mb-3">
+            <label class="form-label" for="cp">Current Password</label>
+            <input class="form-control" type="password" name="currentPassword" id="cp" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="np">New Password</label>
+            <input class="form-control" type="password" name="newPassword" id="np" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="conp">Confirm Password</label>
+            <input class="form-control" type="password" name="confirmPassword" id="conp" />
+        </div>
+        <input type="submit" class="mt-3 btn btn-primary" value="Update Profile" name="save" />
+    </form>
+</div>
+
 ?>
 <form method="POST" onsubmit="return validate(this);">
     <div class="mb-3">
@@ -142,5 +192,11 @@ $username = get_username();
 </script>
 <?php
 require_once(__DIR__ . "/../../partials/flash.php");
+
 ?>
 
+
+
+?>
+
+?>

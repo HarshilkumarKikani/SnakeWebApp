@@ -67,6 +67,10 @@ if (isset($_POST["username"])) {
 }
 
 
+
+//this version is for M1Roles
+
+
 ?>
 <h1>Assign Roles</h1>
 <form method="POST">
@@ -114,3 +118,5 @@ if (isset($_POST["username"])) {
 //note we need to go up 1 more directory
 require_once(__DIR__ . "/../../../partials/flash.php");
 ?>
+?>
+
