@@ -36,6 +36,11 @@ function is_valid_email($email = "")
     return filter_var(trim($email), FILTER_VALIDATE_EMAIL);
 }
 //TODO 3: User Helpers
+
+function is_logged_in()
+{
+    return isset($_SESSION["user"]); //se($_SESSION, "user", false, false);
+=======
 function is_logged_in($redirect = false, $destination = "login.php")
 {
     $isLoggedIn = isset($_SESSION["user"]);
@@ -44,6 +49,7 @@ function is_logged_in($redirect = false, $destination = "login.php")
         die(header("Location: $destination"));
     }
     return $isLoggedIn; //se($_SESSION, "user", false, false);
+
 }
 function has_role($role)
 {
@@ -130,5 +136,97 @@ function get_url($dest)
     }
     //handle relative path
     return $BASE_PATH . $dest;
+}
+function save_score($score, $user_id, $showFlash = false)
+{
+    if ($user_id < 1) {
+        flash("Error saving score, you may not be logged in", "warning");
+        return;
+    }
+    if ($score <= 0) {
+        flash("Scores of zero are not recorded", "warning");
+        return;
+    }
+    $db = getDB();
+    $stmt = $db->prepare("INSERT INTO snake_scores (score, user_id) VALUES (:score, :uid)");
+    try {
+        $stmt->execute([":score" => $score, ":uid" => $user_id]);
+        if ($showFlash) {
+            flash("Saved score of $score", "success");
+        }
+    } catch (PDOException $e) {
+        flash("Error saving score: " . var_export($e->errorInfo, true), "danger");
+    }
+}
+function get_latest_scores($user_id, $limit = 10)
+{
+    if ($limit < 1 || $limit > 50) {
+        $limit = 10;
+    }
+    $query = "SELECT score, modified from snake_scores where user_id = :id ORDER BY score desc LIMIT :limit";
+    $db = getDB();
+    //IMPORTANT: this is required for the execute to set the limit variables properly
+    //otherwise it'll convert the values to a string and the query will fail since LIMIT expects only numerical values and doesn't cast
+    $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+    //END IMPORTANT
+
+    $stmt = $db->prepare($query);
+    try {
+        $stmt->execute([":id" => $user_id, ":limit" => $limit]);
+        $r = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        if ($r) {
+            return $r;
+        }
+    } catch (PDOException $e) {
+        error_log("Error getting latest $limit scores for user $user_id: " . var_export($e->errorInfo, true));
+    }
+    return [];
+}
+
+function get_best_score($user_id)
+{
+    $query = "SELECT score from snake_scores WHERE user_id = :id ORDER BY score desc LIMIT 1";
+    $db = getDB();
+    $stmt = $db->prepare($query);
+    try {
+        $stmt->execute([":id" => $user_id]);
+        $r = $stmt->fetch(PDO::FETCH_ASSOC);
+        if ($r) {
+            return (int)se($r, "score", 0, false);
+        }
+    } catch (PDOException $e) {
+        error_log("Error fetching best score for user $user_id: " . var_export($e->errorInfo, true));
+    }
+    return 0;
+}
+
+function get_top_10($duration = "day")
+{
+    $d = "day";
+    if (in_array($duration, ["day", "week", "month", "lifetime"])) {
+        //variable is safe
+        $d = $duration;
+    }
+    $db = getDB();
+    $query = "SELECT user_id,username, score, snake_scores.modified from snake_scores join Users on snake_scores.user_id = Users.id";
+    if ($d !== "lifetime") {
+        //be very careful passing in a variable directly to SQL, I ensure it's a specific value from the in_array() above
+        $query .= " WHERE snake_scores.modified >= DATE_SUB(NOW(), INTERVAL 1 $d)";
+    }
+    //remember to prefix any ambiguous columns (Users and Scores both have created)
+    $query .= " ORDER BY score Desc, snake_scores.modified desc LIMIT 10"; //newest of the same score is ranked higher
+    error_log($query);
+    $stmt = $db->prepare($query);
+    $results = [];
+    try {
+        $stmt->execute();
+        $r = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        if ($r) {
+            $results = $r;
+        }
+    } catch (PDOException $e) {
+        error_log("Error fetching scores for $d: " . var_export($e->errorInfo, true));
+    }
+    return $results;
 }
 

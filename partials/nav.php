@@ -22,6 +22,10 @@ if (($localWorks && $domain == "localhost") || $domain != "localhost") {
 session_start();
 require_once(__DIR__ . "/../lib/functions.php");
 
+
+//this version if for M1EditProfile
+
+
 ?>
 <!-- include css and js files -->
 <link rel="stylesheet" href="<?php echo get_url('styles.css'); ?>">
@@ -44,6 +48,16 @@ require_once(__DIR__ . "/../lib/functions.php");
         <?php if (is_logged_in()) : ?>
             <li><a href="<?php echo get_url('logout.php'); ?>">Logout</a></li>
         <?php endif; ?>
+
+
+        <?php if (is_logged_in()) : ?>
+
+            <li class = "nav-item"><a class = "nav-link" href ="<?php echo get_url('Snake.php'); ?>">Game</a></li>
+        
+        <?php endif; ?>        
+    </ul>
+</nav>
+
     </ul>
 </nav>
 

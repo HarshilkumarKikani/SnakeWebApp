@@ -27,6 +27,9 @@ if (isset($_POST["name"]) && isset($_POST["description"])) {
         }
     }
 }
+
+//this version is for M1Roles
+
 ?>
 <h1>Create Role</h1>
 <form method="POST">
@@ -43,4 +46,8 @@ if (isset($_POST["name"]) && isset($_POST["description"])) {
 <?php
 //note we need to go up 1 more directory
 require_once(__DIR__ . "/../../../partials/flash.php");
+
 ?>
+
+?>
+
