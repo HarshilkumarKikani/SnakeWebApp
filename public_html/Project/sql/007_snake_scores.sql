@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS snake_scores(
+CREATE TABLE IF NOT EXISTS game_Scores(
     id int AUTO_INCREMENT PRIMARY KEY,
     score int,
     user_id int,

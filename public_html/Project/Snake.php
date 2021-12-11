@@ -146,9 +146,16 @@ require (__DIR__ . "/../../partials/nav.php");
 
           // snake occupies same space as a body part. reset game
           if (cell.x === snake.cells[i].x && cell.y === snake.cells[i].y) {
-            if (score > max) {
-              max = score;
+            const xhttp = new XMLHttpRequest();
+            xhttp.onload = function () {
+            location.reload();
+            document.getElementById("demo").innerHTML = this.responseText;
             }
+            xhttp.open("POST", "api/save_score.php");
+            xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xhttp.send(`score=${score}`);
+        
+            
             snake.x = 160;
             snake.y = 160;
             snake.cells = [];
@@ -159,6 +166,7 @@ require (__DIR__ . "/../../partials/nav.php");
             food.x = getRandomInt(0, 25) * grid;
             food.y = getRandomInt(0, 25) * grid;
             document.getElementById('high').innerHTML = '&nbsp;' + max;
+            
           }
         }
       })

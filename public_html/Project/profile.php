@@ -3,8 +3,10 @@ require_once(__DIR__ . "/../../partials/nav.php");
 is_logged_in(true);
 ?>
 <?php
+
+
+
 if (isset($_POST["save"])) {
-    $db = getDB();
     $email = se($_POST, "email", null, false);
     $username = se($_POST, "username", null, false);
     $hasError = false;
@@ -21,7 +23,7 @@ if (isset($_POST["save"])) {
     }
     if (!$hasError) {
         $params = [":email" => $email, ":username" => $username, ":id" => get_user_id()];
-
+        $db = getDB();
         $stmt = $db->prepare("UPDATE Users set email = :email, username = :username where id = :id");
         try {
             $stmt->execute($params);
@@ -52,10 +54,6 @@ if (isset($_POST["save"])) {
     $new_password = se($_POST, "newPassword", null, false);
     $confirm_password = se($_POST, "confirmPassword", null, false);
     if (!empty($current_password) && !empty($new_password) && !empty($confirm_password)) {
-        if (strlen($new_password) < 8) {
-            flash("New password must be at least 8 characters long", "danger");
-            return;
-        }
         if ($new_password === $confirm_password) {
             //TODO validate current
             $stmt = $db->prepare("SELECT password from Users where id = :id");
@@ -94,9 +92,6 @@ $user_id = get_user_id();
 <div class="container-fluid">
     <h1>Profile</h1>
     <div>
-        Best Score: <?php echo get_best_score($user_id); ?>
-    </div>
-    <div>
         <?php $scores = get_latest_scores($user_id); ?>
         <h3>Score History</h3>
         <table class="table text-light">
@@ -108,7 +103,7 @@ $user_id = get_user_id();
                 <?php foreach ($scores as $score) : ?>
                     <tr>
                         <td><?php se($score, "score", 0); ?></td>
-                        <td><?php se($score, "created", "-"); ?></td>
+                        <td><?php se($score, "modified", "-"); ?></td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
@@ -140,6 +135,7 @@ $user_id = get_user_id();
         <input type="submit" class="mt-3 btn btn-primary" value="Update Profile" name="save" />
     </form>
 </div>
+
 <script>
     function validate(form) {
         let pw = form.newPassword.value;
@@ -170,5 +166,5 @@ $user_id = get_user_id();
     }
 </script>
 <?php
-require_once(__DIR__ . "/../../partials/footer.php");
+require_once(__DIR__ . "/../../partials/flash.php");
 ?>
