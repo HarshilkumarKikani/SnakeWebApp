@@ -228,5 +228,9 @@ function get_top_10($duration = "day")
         error_log("Error fetching scores for $d: " . var_export($e->errorInfo, true));
     }
     return $results;
+
 }
+
+}
+
 
