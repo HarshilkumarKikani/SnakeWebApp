@@ -7,3 +7,4 @@ CREATE TABLE IF NOT EXISTS game_Scores(
     FOREIGN KEY (user_id) REFERENCES Users(id),
     check (score > 0)
 )
+/* Table 10 on github */
