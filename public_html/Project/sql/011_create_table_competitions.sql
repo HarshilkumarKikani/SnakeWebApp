@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS Competitions(
+CREATE TABLE IF NOT EXISTS Competitions (
     id int AUTO_INCREMENT PRIMARY KEY,
     names varchar(35),
     min_participants int DEFAULT 3,
