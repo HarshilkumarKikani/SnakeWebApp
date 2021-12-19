@@ -87,3 +87,4 @@ if (isset($_POST["names"]) && !empty($_POST["names"])) {
 <?php
 require(__DIR__ . "/../../partials/footer.php");
 ?>
+
