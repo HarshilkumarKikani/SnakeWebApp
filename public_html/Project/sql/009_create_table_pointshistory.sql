@@ -3,10 +3,9 @@ CREATE TABLE IF NOT EXISTS points_history (
     user_id int,
     point_change int,
     reason varchar(30),
-    created int,
 
     created TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (user_id) REFERENCES Users(id),
-    constraint ZeroTransferNotAllowed CHECK(diff != 0)
+    constraint ZeroTransferNotAllowed CHECK(point_change != 0)
 
 )
