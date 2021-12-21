@@ -4,6 +4,7 @@ CREATE TABLE IF NOT EXISTS Competitions (
     min_participants int DEFAULT 3,
     current_participants int default 0,
     join_fee int default 1,
+    payout_option int;
     starting_reward int DEFAULT 1,
     current_reward int DEFAULT (starting_reward),
     paid_out tinyint(1) DEFAULT 0,
@@ -16,6 +17,7 @@ CREATE TABLE IF NOT EXISTS Competitions (
     expires TIMESTAMP DEFAULT (DATE_ADD(CURRENT_TIMESTAMP, INTERVAL duration DAY)),
     created TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     modified TIMESTAMP DEFAULT CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+    check (first_place_per + second_place_per + third_place_per = 100)
     check (min_score >= 1),
     check (starting_reward >= 1),
     check (current_reward >= starting_reward),
