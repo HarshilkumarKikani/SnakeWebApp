@@ -1,10 +1,10 @@
-CREATE TABLE IF NOT EXISTS game_Scores(
+CREATE TABLE CompetitionParticipants (
     id int AUTO_INCREMENT PRIMARY KEY,
-    score int,
     user_id int,
+    competition_id int,
     created TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     modified TIMESTAMP DEFAULT CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+    unique key(user_id, competition_id),
     FOREIGN KEY (user_id) REFERENCES Users(id),
-    check (score > 0)
+    FOREIGN KEY (competition_id) REFERENCES Competitions(id)
 )
-/* Table 10 on github */

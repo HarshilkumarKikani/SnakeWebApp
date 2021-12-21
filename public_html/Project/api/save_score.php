@@ -31,6 +31,8 @@ if (isset($data["score"])) {
         http_response_code(200);
         //2x and 3x score mod logic
         save_score($score, $user_id, true);
+        $points = $score;
+        change_bills($points, get_user_id(), "win");
         error_log("Score of $score saved successfully for $user_id");
     } else {
         $response["message"] = "AntiCheat Detection Triggered. Score rejected.";
