@@ -295,7 +295,378 @@
 </tr></td></tr></table>
 
 
-- Milestone 3
+
+
+<table>
+<tr><td>Milestone 3</td></tr><tr><td>
+<table>
+<tr><td>F1 - Users will have points associated with their account. ()</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://hk453-prod.herokuapp.com/Project/profile.php](https://hk453-prod.herokuapp.com/Project/profile.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/hk453/IT202-007/pull/84](https://github.com/hk453/IT202-007/pull/84)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F1 - Alter the User table to include points with a default of 0.</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267388/147039000-ffd7ed87-e161-4dee-a3e8-3d28a7a1684a.png">
+<p>Points shown on table with a default of 0.</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F1 - Points should show on their profile page</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267388/147038821-9d9e128f-16d4-47b4-a034-7b96be1d1680.png">
+<p>Points shown on profile page.</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F2 - Create a PointsHistory table (id, user_id, point_change, reason, created) ()</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://hk453-prod.herokuapp.com/Project/profile.php](https://hk453-prod.herokuapp.com/Project/profile.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/hk453/IT202-007/pull/85](https://github.com/hk453/IT202-007/pull/85)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F2 - Any new entry should update the user’s points value (do not update the User points column directly)</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267388/147039117-aa930eb2-47c7-4c13-af23-bfb2613308bd.png">
+<p>PointsHistory table</p>
+</td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267388/147039374-50045753-1c0a-414a-b011-4a85ffeece79.png">
+<p>Points have gone up compared to screenshot in feature 1 because of new score recorded.</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F3 - Competitions table should have the following columns ()</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://hk453-prod.herokuapp.com/Project/home.php](https://hk453-prod.herokuapp.com/Project/home.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/hk453/IT202-007/pull/98](https://github.com/hk453/IT202-007/pull/98)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F3 - (id, name, created, duration, expires (now + duration), current_reward, starting_reward, join_fee, current_participants, min_participants, paid_out (boolean), min_score, first_place_per, second_place_per, third_place_per, cost_to_create, created, modified)</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267388/147039998-f357e433-3c59-4766-83ff-35ccad0986ea.png">
+<p>Competitions table</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F4 - User will be able to create a competition ()</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://hk453-prod.herokuapp.com/Project/create_competition.php](https://hk453-prod.herokuapp.com/Project/create_competition.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/hk453/IT202-007/pull/86](https://github.com/hk453/IT202-007/pull/86)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F4 - Sub feature bullets 1-7 (competitions start at 1 point, user sets name, min cost to qualify, etc)</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267388/147041468-a278d031-81e7-4a3c-af44-44e7e07d4cb4.png">
+<p>Users being able to create a competition</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F4 - Show any user friendly error messages + Show user friendly confirmation message that competition was created</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267388/147041828-3a61b7a9-b5b8-4be1-b787-d7532b4808a7.png">
+<p>User friendly message + successfully created competition message</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F4 - The cost to the creator of the competition will be (1 + starting reward value)</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267388/147041993-2bb0c7c5-9617-4376-8a08-028b2f5ed731.png">
+<p>If they can’t afford it, the competition should not be created</p>
+</td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267388/147041828-3a61b7a9-b5b8-4be1-b787-d7532b4808a7.png">
+<p>If they can afford it, automatically add them to the competition</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F5 - Each new participant causes the Reward value to increase by at least 1 or 50% of the joining fee rounded up ()</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://hk453-prod.herokuapp.com/Project/list_competition.php](https://hk453-prod.herokuapp.com/Project/list_competition.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/hk453/IT202-007/pull/87](https://github.com/hk453/IT202-007/pull/87)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F5 - Evidence</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267388/147042237-7bc5eaa5-d218-4dfb-85c3-5032352ac80a.png">
+<p>Payout value increases with new participants added.</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F6 - Have a page where the User can see active competitions (not expired) ()</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://hk453-prod.herokuapp.com/Project/list_competition.php](https://hk453-prod.herokuapp.com/Project/list_competition.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/hk453/IT202-007/pull/88](https://github.com/hk453/IT202-007/pull/88)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F6 - Evidence</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267388/147042573-6a13cdbf-da59-4396-a828-4bc177055227.png">
+<p>Users can see active competitions on the list competitions screen.</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F7 - Will need an association table CompetitionParticipants (id, comp_id, user_id, created) ()</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://hk453-prod.herokuapp.com/Project/view_competition.php?id=3](https://hk453-prod.herokuapp.com/Project/view_competition.php?id=3)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/hk453/IT202-007/pull/89](https://github.com/hk453/IT202-007/pull/89)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F7 - Comp_id and user_id should be a composite unique key (user can only join a competition once)</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267388/147042881-def8cefc-1ab6-4c4b-933d-a4e8ff30da44.png">
+<p>CompetitionParticipants table</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F8 - User can join active competitions ()</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://hk453-prod.herokuapp.com/Project/list_competition.php](https://hk453-prod.herokuapp.com/Project/list_competition.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/hk453/IT202-007/pull/90](https://github.com/hk453/IT202-007/pull/90)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F8 - Joining active competitions</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267388/147043186-9e4a5982-4c75-46c1-9f0b-553267d0c38c.png">
+<p>Different account's screen when looking at active competitions made by other users (shows join cost and button)</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F8 - Update the Competitions.reward based on the # of participants and the appropriate math from the competition requirements above</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267388/147042237-7bc5eaa5-d218-4dfb-85c3-5032352ac80a.png">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F8 - Show proper confirmation if user registered successfully + shows message user already registered</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267388/147043713-b2be9f15-862f-43d0-8bcc-58915c19ab7d.png">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F9 - Create function that calculates competition winners ()</td></tr>
+<tr><td>Status: pending</td></tr>
+<tr><td>Links:<p>
+
+ [https://hk453-prod.herokuapp.com/Project/list_competition.php](https://hk453-prod.herokuapp.com/Project/list_competition.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/hk453/IT202-007/pull/92](https://github.com/hk453/IT202-007/pull/92)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F9 - Get the top 3 winners</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267388/147046864-4208750d-6aba-48e9-ae13-2872b42fc808.png">
+<p>Calculating top 3 winners code</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F9 - Calculate the payout (reward * place_percent)</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267388/147047014-c43dbbae-03b6-4e7f-909b-ab158bbb77f8.png">
+<p>Calculating payout code</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F9 - Create entries for the Users in the PointsHistory table</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/ffcc00/ffffff?text=in-progress"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267388/147047363-1c140e00-ef65-47a2-91fb-36fdb8307d2a.png">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F9 - Mark the competition as paid_out = true</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267388/147047468-02063142-4b74-4658-9b2c-ca530fbf52e0.png">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr></td></tr></table>
+
+
+
+
+
 - Milestone 4
   - [ ] (mm/dd/yyyy of completion) User can set their profile to be public or private
     -  List of Evidence of Feature Completion
