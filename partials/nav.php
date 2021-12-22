@@ -44,20 +44,24 @@ require_once(__DIR__ . "/../lib/functions.php");
             <li><a href="<?php echo get_url('admin/create_role.php'); ?>">Create Role</a></li>
             <li><a href="<?php echo get_url('admin/list_roles.php'); ?>">List Roles</a></li>
             <li><a href="<?php echo get_url('admin/assign_roles.php'); ?>">Assign Roles</a></li>
-        <?php endif; ?>
+            <li><a href="<?php echo get_url('admin/calc_winners.php'); ?>">Calc Roles</a></li>        <?php endif; ?>
         <?php if (is_logged_in()) : ?>
             <li><a href="<?php echo get_url('logout.php'); ?>">Logout</a></li>
         <?php endif; ?>
 
+        <?php if (is_logged_in()) : ?>
+
+            <li class="nav-item"><a class="nav-link" href="<?php echo get_url('Snake.php'); ?>">Game</a></li>
+            <li class="nav-item"><a class="nav-link" href="<?php echo get_url('profile.php'); ?>">Profile</a></li>
+        <?php endif; ?>
 
         <?php if (is_logged_in()) : ?>
 
-            <li class = "nav-item"><a class = "nav-link" href ="<?php echo get_url('Snake.php'); ?>">Game</a></li>
-        
-        <?php endif; ?>        
-    </ul>
-</nav>
+            <li class="nav-item"><a class="nav-link" href="<?php echo get_url('create_competition.php'); ?>">Create Competition</a></li>
+            <li class="nav-item"><a class="nav-link" href="<?php echo get_url('list_competition.php'); ?>">List Competition</a></li>
+
+
+        <?php endif; ?>
 
     </ul>
 </nav>
-
