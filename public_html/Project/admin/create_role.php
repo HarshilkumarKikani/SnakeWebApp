@@ -48,6 +48,3 @@ if (isset($_POST["name"]) && isset($_POST["description"])) {
 require_once(__DIR__ . "/../../../partials/flash.php");
 
 ?>
-
-?>
-

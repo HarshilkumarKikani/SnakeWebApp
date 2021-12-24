@@ -77,3 +77,4 @@ $scores = get_top_scores_for_comp($id);
 <?php
 require(__DIR__ . "/../../partials/footer.php");
 ?>
+
