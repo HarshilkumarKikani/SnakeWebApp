@@ -667,88 +667,243 @@
 
 
 
-- Milestone 4
-  - [ ] (mm/dd/yyyy of completion) User can set their profile to be public or private
-    -  List of Evidence of Feature Completion
-      - Status: Pending (Completed, Partially working, Incomplete, Pending)
-      - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-      - Pull Requests
-        - PR link #1 (repeat as necessary)
-      - Screenshots
-        - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-          - Screenshot #1 description explaining what you're trying to show
-  - [ ] (mm/dd/yyyy of completion) User will be able to see their competition history
-    -  List of Evidence of Feature Completion
-      - Status: Pending (Completed, Partially working, Incomplete, Pending)
-      - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-      - Pull Requests
-        - PR link #1 (repeat as necessary)
-      - Screenshots
-        - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-          - Screenshot #1 description explaining what you're trying to show
-  - [ ] (mm/dd/yyyy of completion) User with the role of “admin” can edit a competition where paid_out = false
-    -  List of Evidence of Feature Completion
-      - Status: Pending (Completed, Partially working, Incomplete, Pending)
-      - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-      - Pull Requests
-        - PR link #1 (repeat as necessary)
-      - Screenshots
-        - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-          - Screenshot #1 description explaining what you're trying to show
-  - [ ] (mm/dd/yyyy of completion) Add pagination to the Active Competitions view
-    -  List of Evidence of Feature Completion
-      - Status: Pending (Completed, Partially working, Incomplete, Pending)
-      - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-      - Pull Requests
-        - PR link #1 (repeat as necessary)
-      - Screenshots
-        - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-          - Screenshot #1 description explaining what you're trying to show
-  - [ ] (mm/dd/yyyy of completion) Anywhere a username is displayed should be a link to that user’s profile
-    -  List of Evidence of Feature Completion
-      - Status: Pending (Completed, Partially working, Incomplete, Pending)
-      - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-      - Pull Requests
-        - PR link #1 (repeat as necessary)
-      - Screenshots
-        - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-          - Screenshot #1 description explaining what you're trying to show
-  - [ ] (mm/dd/yyyy of completion) Viewing an active or expired competition should show the top 10 scoreboard related to that competition
-    -  List of Evidence of Feature Completion
-      - Status: Pending (Completed, Partially working, Incomplete, Pending)
-      - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-      - Pull Requests
-        - PR link #1 (repeat as necessary)
-      - Screenshots
-        - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-          - Screenshot #1 description explaining what you're trying to show
-  - [ ] (mm/dd/yyyy of completion) Game should be fully implemented/complete by this point
-    -  List of Evidence of Feature Completion
-      - Status: Pending (Completed, Partially working, Incomplete, Pending)
-      - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-      - Pull Requests
-        - PR link #1 (repeat as necessary)
-      - Screenshots
-        - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-          - Screenshot #1 description explaining what you're trying to show
-  - [ ] (mm/dd/yyyy of completion) User’s score history will include pagination
-    -  List of Evidence of Feature Completion
-      - Status: Pending (Completed, Partially working, Incomplete, Pending)
-      - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-      - Pull Requests
-        - PR link #1 (repeat as necessary)
-      - Screenshots
-        - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-          - Screenshot #1 description explaining what you're trying to show
-  - [ ] (mm/dd/yyyy of completion) Home page will have a weekly, monthly, and lifetime scoreboard
-    -  List of Evidence of Feature Completion
-      - Status: Pending (Completed, Partially working, Incomplete, Pending)
-      - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-      - Pull Requests
-        - PR link #1 (repeat as necessary)
-      - Screenshots
-        - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-          - Screenshot #1 description explaining what you're trying to show
+
+<table>
+<tr><td>Milestone 4</td></tr><tr><td>
+<table>
+<tr><td>F1 - User can set their profile to be public or private (will need another column in Users table) ()</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://hk453-prod.herokuapp.com/Project/profile.php](https://hk453-prod.herokuapp.com/Project/profile.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/hk453/IT202-007/pull/99](https://github.com/hk453/IT202-007/pull/99)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F1 - Evidence</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267388/147302280-2ade4f4e-1e1a-493c-9a23-1b15febef5d9.png">
+<p>Under profile settings there is an option to make profile public or private.</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F2 - User will be able to see their competition history ()</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://hk453-prod.herokuapp.com/Project/view_competition.php?id=8](https://hk453-prod.herokuapp.com/Project/view_competition.php?id=8)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/hk453/IT202-007/pull/100](https://github.com/hk453/IT202-007/pull/100)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F2 - Limit to 10 results + paginate anything after 10</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267388/147302630-f0bc5188-065b-46f8-b7d0-257d57f76e60.png">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F3 - Add pagination to the Active Competitions view ()</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://hk453-prod.herokuapp.com/Project/list_competition.php](https://hk453-prod.herokuapp.com/Project/list_competition.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/hk453/IT202-007/pull/102](https://github.com/hk453/IT202-007/pull/102)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F3 - Limit to 10 results + pagination</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267388/147302630-f0bc5188-065b-46f8-b7d0-257d57f76e60.png">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F4 - Anywhere a username is displayed should be a link to that user’s profile ()</td></tr>
+<tr><td>Status: pending</td></tr>
+<tr><td>Links:<p>
+
+ [https://hk453-prod.herokuapp.com/Project/home.php](https://hk453-prod.herokuapp.com/Project/home.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/hk453/IT202-007/pull/103](https://github.com/hk453/IT202-007/pull/103)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F4 - This includes all scoreboards</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267388/147306321-58728200-e567-4c93-b290-c54e96a0b414.png">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F4 - If the profile is private you can have the page just display “this profile is private” upon access</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267388/147306394-9ac4922c-dd62-4a72-9913-1460f1ad1cf6.png">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F5 - Viewing an active or expired competition should show the top 10 scoreboard related to that competition ()</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://hk453-prod.herokuapp.com/Project/view_competition.php?id=8](https://hk453-prod.herokuapp.com/Project/view_competition.php?id=8)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/hk453/IT202-007/pull/104](https://github.com/hk453/IT202-007/pull/104)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F5 - Evidence</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267388/147306810-e2e8d554-20c6-4fda-95a8-a3d81fc947c0.png">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F6 - Game should be fully implemented/complete by this point ()</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://hk453-prod.herokuapp.com/Project/Snake.php](https://hk453-prod.herokuapp.com/Project/Snake.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/hk453/IT202-007/pull/105](https://github.com/hk453/IT202-007/pull/105)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F6 - The game</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267388/147306950-84ab7efd-2a7a-4574-8595-0abfdc459af6.png">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F7 - User’s score history will include pagination ()</td></tr>
+<tr><td>Status: pending</td></tr>
+<tr><td>Links:<p>
+
+ [https://hk453-prod.herokuapp.com/Project/profile.php](https://hk453-prod.herokuapp.com/Project/profile.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/hk453/IT202-007/pull/106](https://github.com/hk453/IT202-007/pull/106)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F7 - Show 10 + pagination after 10</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/ffcc00/ffffff?text=in-progress"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267388/147307332-e58121f3-5a77-41e0-b943-64ecb7b4b432.png">
+<p>10 scores are showing per page but pagination is still not working correctly. I tried using $offset and $per_page, but was still getting minor issues.</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F8 - Home page will have a weekly, monthly, and lifetime scoreboard ()</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://hk453-prod.herokuapp.com/Project/home.php](https://hk453-prod.herokuapp.com/Project/home.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/hk453/IT202-007/pull/110](https://github.com/hk453/IT202-007/pull/110)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F8 - Home page view of top scores by week, month, and lifetime + scoreboards will show username and points for the session</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267388/147307448-fd365372-76a3-4ab7-85ec-31de849efd9c.png">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F8 - Will also have a link to the game</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267388/147307624-cea6cf31-4a91-47ae-86ea-70769c88ec9e.png">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr></td></tr></table>
+
+ 
 ### Intructions
 #### Don't delete this
 1. Pick one project type
