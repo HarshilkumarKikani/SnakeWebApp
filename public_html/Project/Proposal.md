@@ -1,7 +1,7 @@
 # Project: 
 
 # Project Name: Simple Arcade
-## Project Summary: This project will create a simple Arcade with scoreboards and competitions based on the implemented game. 
+## Project Summary: This project will create a simple Arcade with scoreboards and competitions based on the implemented game. Base game code: [https://gist.github.com/ZiKT1229/5935a10ce818ea7b851ea85ecf55b4da ]
 ## Github Link: https://github.com/hk453/IT202-007/tree/prod/public_html/Project
 ## Project Board Link: https://github.com/hk453/IT202-007/projects/1
 ## Website Link: https://hk453-prod.herokuapp.com/Project/login.php
