@@ -57,7 +57,6 @@ require (__DIR__ . "/../../partials/nav.php");
 
 <body>
   <p id="p1">Score:<span id="score"></span></p>
-  <p id="p2">High Score:<span id="high"></span></p>
   <canvas width="400" height="400" id="game"></canvas>
   <script>
     var canvas = document.getElementById('game');
